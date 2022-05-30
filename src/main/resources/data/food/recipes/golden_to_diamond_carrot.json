@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:golden_carrot"
+    },
+    "addition": {
+        "item": "food:diamond_dust"
+    },
+    "result": {
+        "item": "food:diamond_carrot"
+    }
+}

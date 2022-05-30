@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "food:diamond_dust"
+        },
+        {
+            "item": "food:diamond_dust"
+        },
+        {
+            "item": "food:diamond_dust"
+        },
+        {
+            "item": "food:diamond_dust"
+        }
+    ],
+    "result": {
+        "item": "minecraft:diamond",
+        "count": 1
+    }
+}

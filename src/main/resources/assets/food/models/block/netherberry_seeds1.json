@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/crop",
+    "textures": {
+        "crop": "food:block/netherberry_seeds_stage1"
+    }
+}

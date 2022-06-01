@@ -44,8 +44,6 @@ public class NetherSoil extends FarmlandBlock {
         if (!world.isClient && fallDistance > 0.5F && entity instanceof LivingEntity && (entity instanceof PlayerEntity || world.getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING)) && entity.getWidth() * entity.getWidth() * entity.getHeight() > 0.512F) {
             setToNetherrack(state, world, pos);
         }
-
-        super.onLandedUpon(world, state, pos, entity, fallDistance);
     }
 
     public static void setToNetherrack(BlockState state, World world, BlockPos pos) {
@@ -58,12 +56,12 @@ public class NetherSoil extends FarmlandBlock {
     }
 
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        int i = (Integer)state.get(MOISTURE);
+        int i = state.get(MOISTURE);
         if (!isLavaNearby(world, pos)) {
             if (i > 0) {
                 world.setBlockState(pos, (BlockState)state.with(MOISTURE, i - 1), 2);
             } else if (!hasCrop(world, pos)) {
-                setToDirt(state, world, pos);
+                setToNetherrack(state, world, pos);
             }
         } else if (i < 7) {
             world.setBlockState(pos, (BlockState)state.with(MOISTURE, 7), 2);

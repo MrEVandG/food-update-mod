@@ -1,5 +1,6 @@
 {
     "item.food.diamond_carrot": "Diamond Carrot",
     "item.food.diamond_dust": "Diamond Dust",
-    "item.food.netherberry_fruit": "Netherberry Fruit"
+    "item.food.netherberry_fruit": "Netherberry Fruit",
+    "itemGroup.food.agriculture_update": "Agriculture Update"
 }

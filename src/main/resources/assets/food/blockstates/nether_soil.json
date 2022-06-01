@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=1": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=2": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=3": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=4": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=5": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=6": {
+      "model": "food:block/nether_soil"
+    },
+    "moisture=7": {
+      "model": "food:block/nether_soil_moist"
+    }
+  }
+}

@@ -2,7 +2,11 @@
     "item.food.diamond_carrot": "Diamond Carrot",
     "item.food.diamond_dust": "Diamond Dust",
     "item.food.netherberry_fruit": "Netherberry Fruit",
+    "block.food.netherberry_seeds": "Netherberry Seeds",
     "itemGroup.food.agriculture_update": "Agriculture Update",
     "item.food.valuable_searcher": "Valuable Searcher",
-    "item.food.valuable_searcher.nothing_found": "No items found!"
+    "item.food.valuable_searcher.nothing_found": "No items found!",
+    "item.food.blueberry": "Blueberries",
+    "item.item.blueberry_seeds": "Blueberry Seeds",
+    "block.food.blueberry_bush": "Blueberry Bush"
 }

@@ -1,6 +1,7 @@
 package mrevandg.agriculture.update.block;
 
 import mrevandg.agriculture.update.AgricultureUpdate;
+import mrevandg.agriculture.update.block.custom.BlueberryBushBlock;
 import mrevandg.agriculture.update.block.custom.NetherSoil;
 import mrevandg.agriculture.update.block.custom.NetherberrySeedsBlock;
 import mrevandg.agriculture.update.item.ModItemGroup;
@@ -10,7 +11,6 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -19,8 +19,11 @@ public class ModBlocks {
     public static final Block NETHERBERRY_SEEDS = registerBlockWithoutBlockItem("netherberry_seeds",
             new NetherberrySeedsBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
 
-    public static final Block NETHER_SOIL = registerBlock("nether_soil", new NetherSoil(),
-    ModItemGroup.AGRICULTURE_UPDATE );
+    public static final Block NETHER_SOIL = registerBlock("nether_soil",
+        new NetherSoil(), ModItemGroup.AGRICULTURE_UPDATE);
+    // BLUEBERRY BUSH
+    public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
+        new BlueberryBushBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {

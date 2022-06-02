@@ -2,10 +2,11 @@ package mrevandg.agriculture.update.item;
 
 import mrevandg.agriculture.update.AgricultureUpdate;
 import mrevandg.agriculture.update.block.ModBlocks;
+import mrevandg.agriculture.update.item.custom.BlueberryItem;
+import mrevandg.agriculture.update.item.custom.ValueSearcher;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -18,7 +19,18 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.AGRICULTURE_UPDATE)));
 
     public static final Item NETHERBERRY_FRUIT = registerItem("netherberry_fruit",
-            new AliasedBlockItem(ModBlocks.NETHERBERRY_SEEDS, new FabricItemSettings().group(ModItemGroup.AGRICULTURE_UPDATE)));
+            new AliasedBlockItem(ModBlocks.NETHERBERRY_SEEDS,
+                    new FabricItemSettings().group(ModItemGroup.AGRICULTURE_UPDATE)));
+    // BLUEBERRIES AND BLUEBERRY SEEDS
+    public static final Item BLUEBERRY = registerItem("blueberry",
+            new BlueberryItem(new FabricItemSettings().group(ModItemGroup.AGRICULTURE_UPDATE)));
+
+    public static final Item BLUEBERRY_SEEDS = registerItem("blueberry_seeds",
+            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH,
+                new FabricItemSettings().group(ModItemGroup.AGRICULTURE_UPDATE)));
+
+    public static final Item VALUE_SEARCHER = registerItem("valuable_searcher",
+            new ValueSearcher(new FabricItemSettings().group(ModItemGroup.AGRICULTURE_UPDATE).maxDamage(30)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(AgricultureUpdate.MOD_ID, name), item);
     }

@@ -3,7 +3,6 @@ package mrevandg.agriculture.update.block.custom;
 import mrevandg.agriculture.update.block.ModBlocks;
 import mrevandg.agriculture.update.item.ModItems;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.math.BlockPos;

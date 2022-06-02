@@ -3,8 +3,6 @@ package mrevandg.agriculture.update;
 import mrevandg.agriculture.update.block.ModBlocks;
 import mrevandg.agriculture.update.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
